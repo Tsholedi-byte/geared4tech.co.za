@@ -1,0 +1,307 @@
+/* .carouse-item-height{
+  height: 100%;
+} */
+
+@keyframes zoomOut {
+  from {
+      transform: scale(0.8); /* Start with no scale (normal size) */
+  }
+  to {
+      transform: scale(1); /* Zoom-out to 80% of original size */
+  }
+}
+
+.carousel-item img {
+  animation: zoomOut 1s ease forwards; /* Apply the animation */
+  animation-duration: 5s;
+}
+
+.carouse-img-height{
+  height: 100%;
+  object-fit: cover;
+}
+
+.about{
+  margin-top: 100px;
+}
+
+#icon-dash {
+  margin-top: 0px;
+  color: rgb(240, 64, 64);
+  width: 100%;
+  font-size: 100px;
+  text-align: center;
+}
+
+#about-founder-text {
+  color: grey;
+}
+
+.center-icons {
+  margin-top: 100px;
+  text-align: center;
+}
+
+#row-gap {
+  margin-top: 100px;
+}
+
+.transparent-section {
+  background-image: url('img/glass-3276648_1920.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-top: 100px;
+  height: 400px;
+  object-fit: cover;
+}
+
+#justify-trans-sec-span {
+  padding-top: 50px;
+}
+
+#trans-sec-text {
+  padding-top: 150px;
+  font-weight: bolder;
+  color: white;
+}
+
+.founder {
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.card {
+  width: 500px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-body {
+  background-color: rgb(223, 217, 217);
+}
+
+.card-img-top {
+  padding: 10px;
+  background-color: rgb(223, 217, 217);
+}
+
+.contact {
+  color: white;
+}
+
+.contact-info {
+  margin-top: 50px;
+}
+
+.contact-info img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px; 
+  margin-right: 10px;
+}
+
+#fixed-navbar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  background-color: black; 
+  color: #fff; 
+  text-align: center; 
+}
+
+
+.social-media {
+  padding-top: 20px;
+}
+
+/* Style for common information */
+.common-info {
+  margin-top: 20px; 
+  font-size: 0.9em; 
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.social-media img {
+  width: 30px; 
+  height: 30px; 
+  margin: 0 10px; 
+}
+
+#back-to-top {
+  display: none; 
+  position: fixed; 
+  bottom: 35px; 
+  right: 20px; 
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  border-radius: 50%; 
+  width: 30px; 
+  height: 30px; 
+  font-size: 20px; 
+  line-height: 40px; 
+  text-align: center; 
+  cursor: pointer; 
+}
+
+.services {
+  margin-top: 60px;
+}
+.service-image:hover {
+  transform: scale(1.2); 
+}
+
+.service-image {
+  transition: tranform 0.3 ease;
+  width: 100px;
+  border: 2px red solid;
+  border-radius: 20px 20px;
+  margin-top: 20px;
+}
+
+.adjust-service-text {
+  margin-top: 20px;
+}
+
+.btn-container {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  border-radius: 20px 20px;
+  color: white;
+  background-color: rgb(189, 185, 185);
+  border: none;
+}
+
+
+.section-heading {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+/*------------------------------------------------------*/
+@media screen and (max-width: 1024px) {
+  #about-founder-text {
+    padding: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 990px) {
+  .btn-container {
+    margin-top: 60px;
+    
+  }
+  .card {
+    width: 400px;
+  }
+  .about{
+    margin-top: 60px;
+  }
+  .center-icons {
+    margin-top: 60px;
+   
+  }
+  .founder {
+    margin-top: 60px;
+  }
+  .contact {
+    margin-top:400px;
+
+  }
+  
+}
+
+@media screen and (max-width: 887px) {
+  .contact {
+    padding: 20px 0 20px 0;
+  }
+
+  .contact-info {
+    font-size: smaller;
+    margin: 25px 0 0 0;
+  }
+  .section-heading {
+    font-size: x-large;
+  }
+  
+}
+
+@media screen and (max-width: 836px) {
+  .card {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  .contact {
+    padding: 15px 0 15px 0;
+  }
+
+  .contact-info {
+    font-size: smaller;
+    margin: 25px 0 0 0;
+  }
+  .section-heading {
+    font-size: large;
+  }
+  .common-info {
+    font-size: smaller;
+  }
+  .social-media img {
+    width: 25px; 
+    height: 25px; 
+    margin: 0 10px; 
+  }
+  
+}
+
+@media screen and (max-width: 635px) {
+  .contact {
+    padding: 10px 0 10px 0;
+  }
+
+  .contact-info {
+    font-size: x-small;
+    margin: 25px 0 0 0;
+  }
+  .section-heading {
+    font-size: medium;
+  }
+  .common-info {
+    font-size: x-small;
+  }
+  .social-media img {
+    width: 20px; 
+    height: 20px; 
+    margin: 0 7px; 
+  }
+  .section-heading {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  .contact {
+    margin-top: 500px;
+
+  }
+  
+}
